@@ -1,0 +1,42 @@
+.left-section {
+    width: 75%;
+    height: 100%;
+}
+
+
+.temp-info {
+    gap: 1rem;
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+.cityName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    background-color: #fdefce;
+    border-radius: 2rem;
+}
+
+.iconImage {
+    width: 10rem;
+    height: 10rem;
+}
+
+.weather-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.weather-more-info {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
-import '../assests/css/index.css';
+import '../assests/css/Header.css';
 const Header = () => {
 
    return(
     <div className='header mx-5'>
     <div className="appName">
-        <h1 className='text-primary'>Weather App</h1>
+        <h1 className='headerName'>Weather App</h1>
     </div>
     <div className="searchBar ">
     <nav className="navbar  justify-content-between">

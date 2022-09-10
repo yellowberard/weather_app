@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 1; */
+}
+
+.main {
+  height: 500%;
+}
+
+.temp-info {
+  gap: 1rem;
+}
+
+.cityName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.iconImage {
+  width: 5rem;
+  height: 5rem;
+}
+
+.weather-type {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-more-info {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
 }

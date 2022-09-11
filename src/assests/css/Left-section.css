@@ -17,15 +17,22 @@
 }
 
 .temp {
+    padding: 1rem;
     font-size: 5rem;
     font-weight: bold;
     margin: 0;
     background-color: #fdefce;
     border-radius: 2rem;
+    width: 70%;
+}
+
+.temperatue {
+    font-size: 5rem;
+    font-weight: bold;
 }
 
 .iconImage {
-    width: 10rem;
+    /* width: 15rem; */
     height: 10rem;
 }
 

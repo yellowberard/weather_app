@@ -2,22 +2,24 @@ import React from 'react'
 import '../assests/css/Left-section.css'
 import CircularProgress from './CircularProgression';
 import ProgressSection from './ProgressionSection';
-
+import Skyline from '../assests/images/skyline.webp'
 const LeftSection = () => {
     return(
         <div className="left-section">
-    <div className="temp-info container row d-flex flex-column  align-items-center justify-content-center">
+    <div className="temp-info container-fluid row d-flex flex-column  align-items-center justify-content-center">
     
     <div className="temp col-7 d-flex justify-content-center align-self-center">
         
     <span className="weatherIcon flex-grow-1">
-        <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-day-overcast-snow.svg" alt="" className='iconImage' /></span>
+        <img src={Skyline} alt="" className='cityImg' /></span>
       <div className="temp d-flex  flex-column justify-content-center align-self-center">
-     <span className=' cityName container-fluid d-flex justify-content-center ' >
+     <span className=' cityName  ' >
          Delhi, India
     </span> 
-      <span className="temp"> 27°C</span>
-      <span className='weather-type container-fluid d-flex justify-content-center ' >
+      <span className="tempratue"> 27°C 
+      </span>
+      <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-day-overcast-snow.svg" alt="" className='iconImage' ></img>
+      <span className='weather-type' >    
          ThunderStrom Day Overcast Snow
     </span> 
       </div>

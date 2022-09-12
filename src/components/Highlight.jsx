@@ -4,7 +4,7 @@ import '../assests/css/Highlight.css'
 const Highlight =()=>{
     return(
         <div className="highlight container-fluid d-flex  align-items-center">
-            <div className="sun container d-flex flex-column justify-content-center align-itmes-center">
+            <div className="sun shadow container d-flex flex-column justify-content-center align-itmes-center">
                 <div className="sunHead  d-flex justify-content-center align-items-center">
                     <span className=' align-self-center'>Sunrise and Sunset</span>
                     <img src="https://bmcdn.nl/assets/weather-icons/v3.0/line/svg/horizon.svg" alt="" />
@@ -21,7 +21,7 @@ const Highlight =()=>{
                 </div>
             </div>
             
-            <div className="aqi container-fluid flex-column d-flex justify-content-center align-items-center">
+            <div className="aqi shadow container-fluid flex-column d-flex justify-content-center align-items-center">
                 <div className="aqiHead d-flex justify-content-center align-items-center">
                    <span>Air Quality</span>
                 </div>

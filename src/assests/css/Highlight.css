@@ -1,6 +1,5 @@
-.sun,
-.aqi {
-    background-color: rgba(219, 219, 219, 0.904);
+.sun {
+    background-color: rgba(240, 239, 239, 0.897);
     /* border: 1px solid #ccc; */
     border-radius: 2rem;
     padding: 0.8rem;
@@ -15,7 +14,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 0.8rem;
-    height: 25%;
+    /* height: 25%; */
 }
 
 .sunHead img {

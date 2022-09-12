@@ -1,5 +1,22 @@
 .right-section {
     width: 25%;
     height: 100%;
+}
+
+.addCity {
     background-color: #fdefce;
+    border-radius: 1rem;
+    width: 70%;
+    padding: 0.8rem;
+    gap: 5%
+}
+
+.addCity span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.addCity img {
+    height: 5rem;
+    width: 5rem;
 }

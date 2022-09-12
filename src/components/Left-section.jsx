@@ -6,9 +6,9 @@ import Skyline from '../assests/images/skyline.webp'
 const LeftSection = () => {
     return(
         <div className="left-section">
-    <div className="temp-info container-fluid row d-flex flex-column  align-items-center justify-content-center">
+    <div className="temp-info  container-fluid row d-flex flex-column  align-items-center justify-content-center">
     
-    <div className="temp col-7 d-flex justify-content-center align-self-center">
+    <div className="temp shadow col-7 d-flex justify-content-center align-self-center">
         
     <span className="weatherIcon flex-grow-1">
         <img src={Skyline} alt="" className='cityImg' /></span>

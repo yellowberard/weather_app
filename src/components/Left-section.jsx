@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assests/css/Left-section.css'
-import CircularProgress from './CircularProgression';
 import ProgressSection from './ProgressionSection';
+import Highlight from './Highlight';
 import Skyline from '../assests/images/skyline.webp'
 const LeftSection = () => {
     return(
@@ -42,6 +42,8 @@ const LeftSection = () => {
     </div> */}
 </div>
 <ProgressSection />
+<Highlight />
+
     </div>
     )
 }

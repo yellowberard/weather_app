@@ -6,9 +6,9 @@ import '../assests/css/index.css';
 const Main=() => {
 
     return(
-        <div className="main container-fluid d-flex justify-content-center align-itmes-center">
+        <div className="main  d-flex justify-content-center align-itmes-center">
          <LeftSection />
-            <RightSection />
+        <RightSection />
     
         </div>
     )

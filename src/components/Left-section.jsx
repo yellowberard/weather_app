@@ -41,7 +41,32 @@ const LeftSection = () => {
          </div>   
     </div> */}
 </div>
+<div className="mid-main d-flex  align-items-center">    
 <ProgressSection />
+<div className="more-info d-flex flex-column justify-content-center align-items-center" >
+    <div className="feels d-flex flex-column justify-content-center align-items-center">
+        <span className='mid-info-head'>Feels like</span>
+        <span>27°C</span>
+    </div>
+    <div className="temp-more-info d-flex justify-content-center align-items-center">
+    <div className="temp-low">
+        <span className='row mid-info-head'>Minimun temp.</span>
+        <span className="low-temp">32<sup>o</sup>C</span>
+        <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thermometer-colder.svg" alt="" />
+    </div>
+    <div className="temp-high">
+        <span className='row mid-info-head'>Highest temp</span>
+    <span className="high-temp">32<sup>o</sup>C</span>
+        <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thermometer-warmer.svg" alt="" />
+    </div>
+    </div>
+    <div className="pressure">
+        <span className='row mid-info-head'>Pressure</span>
+    <span className="pressure-value">1015</span>
+        <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/barometer.svg" alt="" />
+    </div>
+</div>
+</div>
 <Highlight />
 
     </div>

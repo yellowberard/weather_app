@@ -50,3 +50,38 @@
     font-weight: bold;
     margin: 0;
 }
+
+.mid-main {
+    gap: 5%;
+}
+
+.more-info {
+    /* font-size: 1.2rem; */
+    width: 100%;
+    gap: 5%
+}
+
+.mid-info-head {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.temp-more-info {
+    gap: 5%;
+}
+
+.temp-high img {
+    height: 6rem;
+    /* width: 2rem; */
+}
+
+.temp-low img {
+    height: 6rem;
+    /* width: 2rem; */
+}
+
+.pressure img {
+    height: 6rem;
+    /* width: 2rem; */
+}

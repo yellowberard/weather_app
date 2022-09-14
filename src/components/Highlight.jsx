@@ -3,6 +3,12 @@ import AirQuality from './AirQuality'
 import '../assests/css/Highlight.css'
 const Highlight =( {sunrise, sunset, dataPolll} )=>{
 
+    
+    const sunriseDate = new Date(sunrise * 1000);
+    const sunriseTime =  sunriseDate.toLocaleTimeString("en-US");
+
+    const sunsetDate = new Date(sunset * 1000);
+    const sunsetTime =  sunsetDate.toLocaleTimeString("en-US");
     return(
         <div className="highlight container-fluid d-flex  align-items-center">
             <div className="sun shadow container d-flex flex-column justify-content-center align-itmes-center">
@@ -13,11 +19,11 @@ const Highlight =( {sunrise, sunset, dataPolll} )=>{
                 <div className="sunContent  d-flex justify-content-center align-items-center" >
                     <div className="sunrise">
                         <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/sunrise.svg" alt="" />
-                        <span>6:00 AM</span>
+                        <span>{sunriseTime}</span>
                     </div>
                     <div className="sunset">
                         <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/sunset.svg" alt="" />
-                        <span>6:00 PM</span>
+                        <span>{sunsetTime}</span>
                     </div>
                 </div>
             </div>
@@ -36,15 +42,15 @@ const Highlight =( {sunrise, sunset, dataPolll} )=>{
                   <div className="aqiDescLeft d-flex flex-column justify-content-start align-items-center">
                          <AirQuality type='CO' airValue={dataPolll.list?dataPolll.list[0].components.co:0} />
                          <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.no : 0} />
-                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.no2 : 0} />
-                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.o3 : 0} />
+                         <AirQuality type='NO2' airValue={dataPolll.list ? dataPolll.list[0].components.no2 : 0} />
+                         <AirQuality type='O3' airValue={dataPolll.list ? dataPolll.list[0].components.o3 : 0} />
  
                   </div>
                    <div className="aqiDescRight d-flex flex-column justify-content-start align-items-center">
-                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.so2 : 0} />
-                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.pm2_5 : 0} />
-                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.pm10 : 0} />
-                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.nh3 : 0} />
+                         <AirQuality type='SO2' airValue={dataPolll.list ? dataPolll.list[0].components.so2 : 0} />
+                         <AirQuality type='PM 2.5' airValue={dataPolll.list ? dataPolll.list[0].components.pm2_5 : 0} />
+                         <AirQuality type='PM 10' airValue={dataPolll.list ? dataPolll.list[0].components.pm10 : 0} />
+                         <AirQuality type='NH3' airValue={dataPolll.list ? dataPolll.list[0].components.nh3 : 0} />
         
                      </div>
                   </div>

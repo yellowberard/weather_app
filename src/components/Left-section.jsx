@@ -17,7 +17,8 @@ const LeftSection = ({ data, dataPoll}) => {
       <span className=' cityName ' >
        {data.name},{data.sys?data.sys.country:''}
      </span> 
-      <span className="tempratue"> {data.main?data.main.temp:null}°C 
+      <span className="temperatue"> 
+      {data.main?data.main.temp:null}°C 
       </span>
       <span className='weather-type' >    
          {data.weather?data.weather[0].main:''}
@@ -31,10 +32,10 @@ const LeftSection = ({ data, dataPoll}) => {
 <div className="mid-main d-flex  align-items-center">    
 <ProgressSection />
 <div className="more-info shadow d-flex flex-column  justify-content-center align-items-center" >
-    <div className="feels_pressure d-flex  justify-content-center ">
-    <div className="feels d-flex flex-column  align-items-center">
+    <div className="feels_pressure d-flex align-items-center justify-content-center ">
+    <div className="feels d-flex flex-column align-items-center">
         <span className='mid-info-head justify-self-start'>Feels like</span>
-        <span>{data.main?data.main.feels_like:0}°C</span>
+        <span className='justify-self-center'>{data.main?data.main.feels_like:0}°C</span>
     </div>
     <div className="pressure d-flex flex-column justify-content-center align-items-center">
         <span className='row mid-info-head'>Pressure</span>

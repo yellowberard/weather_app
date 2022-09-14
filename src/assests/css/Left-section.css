@@ -30,12 +30,14 @@
     border-radius: 5rem;
     padding: 2rem;
     background-color: #fdefce;
+    font-family: 'Domine', serif;
 
 }
 
 .temperatue {
     font-size: 5rem;
     font-weight: bold;
+    font-family: 'Lora', serif;
 }
 
 .iconImage {
@@ -68,18 +70,21 @@
     gap: 5%
 }
 
+.mid-info-head {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Domine', serif;
+}
+
 .feels_pressure {
     width: 100%;
     gap: 10%
 }
 
-.mid-info-head {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
+.feels {
+    height: 100%;
 }
-
-
 
 .temp-more-info {
     width: 100%;

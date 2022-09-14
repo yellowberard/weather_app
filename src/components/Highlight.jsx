@@ -1,7 +1,8 @@
 import React from 'react'
 import AirQuality from './AirQuality'
 import '../assests/css/Highlight.css'
-const Highlight =()=>{
+const Highlight =( {sunrise, sunset, dataPolll} )=>{
+
     return(
         <div className="highlight container-fluid d-flex  align-items-center">
             <div className="sun shadow container d-flex flex-column justify-content-center align-itmes-center">
@@ -33,17 +34,17 @@ const Highlight =()=>{
                      </div>
                  <div className="aqiDesc d-flex justify-content-center align-items-center">
                   <div className="aqiDescLeft d-flex flex-column justify-content-start align-items-center">
-                         <AirQuality type='CO' airValue='171.9' />
-                         <AirQuality type='NO' airValue='0'/>
-                         <AirQuality type='NO2' airValue='0.49'/>
-                         <AirQuality type='NO3' airValue='46.49'/>
+                         <AirQuality type='CO' airValue={dataPolll.list?dataPolll.list[0].components.co:0} />
+                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.no : 0} />
+                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.no2 : 0} />
+                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.o3 : 0} />
  
                   </div>
                    <div className="aqiDescRight d-flex flex-column justify-content-start align-items-center">
-                      <AirQuality type='SO2' airValue='0.13'/>
-                      <AirQuality type='PM 2.5' airValue='0.54'/>
-                      <AirQuality type='PM 10' airValue='0.6'/>
-                      <AirQuality type='NH3' airValue='0.35'/>
+                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.so2 : 0} />
+                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.pm2_5 : 0} />
+                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.pm10 : 0} />
+                         <AirQuality type='NO' airValue={dataPolll.list ? dataPolll.list[0].components.nh3 : 0} />
         
                      </div>
                   </div>

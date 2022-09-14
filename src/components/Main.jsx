@@ -3,11 +3,11 @@ import RightSection from './Right-section';
 import LeftSection from './Left-section';
 import '../assests/css/index.css';
 
-const Main=() => {
+const Main=( {weatherData, dataPol}) => {
 
     return(
         <div className="main  d-flex justify-content-center align-itmes-center">
-         <LeftSection />
+         <LeftSection data={weatherData} dataPoll={dataPol} />
         <RightSection />
     
         </div>

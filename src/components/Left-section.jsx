@@ -6,7 +6,7 @@ import Skyline from '../assests/images/skyline.webp';
 import WeatherIcon from './WeatherIcon';
 
 
-const LeftSection = ({ data, dataPoll}) => {
+const LeftSection = ({ data, dataPoll, aqiData}) => {
     const date = new Date(data ? data.dt+data.timezone * 1000 : 0);
     const time =  date.toLocaleTimeString("en-US");
    
@@ -66,7 +66,7 @@ const LeftSection = ({ data, dataPoll}) => {
     
 </div>
 </div>
-<Highlight sunrise={data.sys?data.sys.sunrise:0} sunset={data.sys?data.sys.sunset:0} dataPolll={dataPoll} />
+<Highlight sunrise={data.sys?data.sys.sunrise:0} sunset={data.sys?data.sys.sunset:0} dataPolll={dataPoll} aqiData={aqiData} />
 
     </div>
     )

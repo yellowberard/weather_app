@@ -26,7 +26,7 @@ const Header = ( {changeLocation}) => {
          id="themeSearch"
          type="search"
          className="searchBarCollections border-0 shadow-none form-control rounded-pill"
-         placeholder="Search"
+         placeholder="Search City"
          aria-label="Search"
          aria-describedby="search-addon"
          onKeyPress={ searchLocation }

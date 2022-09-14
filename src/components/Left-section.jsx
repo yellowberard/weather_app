@@ -2,8 +2,15 @@ import React from 'react'
 import '../assests/css/Left-section.css'
 import ProgressSection from './ProgressionSection';
 import Highlight from './Highlight';
-import Skyline from '../assests/images/skyline.webp'
+import Skyline from '../assests/images/skyline.webp';
+import WeatherIcon from './WeatherIcon';
+
+
 const LeftSection = ({ data, dataPoll}) => {
+    const date = new Date(data ? data.dt+data.timezone * 1000 : 0);
+    const time =  date.toLocaleTimeString("en-US");
+   
+    const country = data.sys ? `${data.sys.country}` : "IN";  
     return(
         <div className="left-section">
     <div className="temp-info  container-fluid row d-flex flex-column  align-items-center justify-content-center">
@@ -23,8 +30,9 @@ const LeftSection = ({ data, dataPoll}) => {
       <span className='weather-type' >    
          {data.weather?data.weather[0].main:''}
     </span> 
-      <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-day-overcast-snow.svg" alt="" className='iconImage' ></img>
-     
+      {/* <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/mist.svg" alt="" className='iconImage' ></img> */}
+        <WeatherIcon icon={data.weather?data.weather[0].id:''} />
+      <span className='small'>Updated as of: <br/>{time}</span>
       </div>
     </div>
    

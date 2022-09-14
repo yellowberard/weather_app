@@ -1,9 +1,10 @@
 import React from 'react'
 import AirQuality from './AirQuality'
 import '../assests/css/Highlight.css'
-const Highlight =( {sunrise, sunset, dataPolll} )=>{
 
-    
+const Highlight =( {sunrise, sunset, dataPolll} )=>{
+    const aqiColors = ["#08e303", "#ff7d01", "#ff0000", "#8e3f98", "#7d0121"];
+    const aqiName = ["Good", "Fair", "Moderate", "Poor", "Very Poor"];
     const sunriseDate = new Date(sunrise * 1000);
     const sunriseTime =  sunriseDate.toLocaleTimeString("en-US");
 
@@ -33,9 +34,10 @@ const Highlight =( {sunrise, sunset, dataPolll} )=>{
                    <span>Air Quality</span>
                 </div>
                <div className="aqiContent d-flex justify-content-center align-items-center ">
-                <div className="aqiIndex container-fluid d-flex justify-content-center align-items-center">
-                 <div className="indexDesc">
-                   <span>Worst</span>
+                <div className="aqiIndex container-fluid d-flex justify-content-center align-items-center" style={{backgroundColor: aqiColors[(dataPolll.list ? dataPolll.list[0].main.aqi-1  : 0)]}}>
+                 <div className="indexDesc d-flex flex-column justify-content-center align-items-center" >
+                 <span className='text-white h5 mb-0'>{dataPolll.list ? dataPolll.list[0].main.aqi : 0}</span>
+                   <span>{aqiName[dataPolll.list ? dataPolll.list[0].main.aqi-1  : 0]}</span>
                       </div>
                      </div>
                  <div className="aqiDesc d-flex justify-content-center align-items-center">

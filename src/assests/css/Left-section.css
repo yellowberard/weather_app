@@ -107,3 +107,7 @@
     height: 6rem;
     /* width: 2rem; */
 }
+
+.small {
+    font-size: 0.8rem;
+}

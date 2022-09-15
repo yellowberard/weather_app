@@ -67,7 +67,7 @@
     padding: 1rem;
     width: 80%;
     border-radius: 2rem;
-    gap: 5%
+    /* gap: 5% */
 }
 
 .mid-info-head {
@@ -110,4 +110,11 @@
 
 .small {
     font-size: 0.8rem;
+}
+
+.high-head {
+    /* padding-top: 1em; */
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0;
 }

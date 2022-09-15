@@ -7,9 +7,7 @@ function App() {
     const [data, setData] = useState({});
     const [dataPol, setDataPol] = useState({});
     const [location, setLocation] = useState('Delhi');
-    const [aqiData, setAqiData] = useState({});
-
-    const aqiApi="6998562f6084599f3c79a99114751592ca69af62";
+    
     const API = "3282c9275b365d66e9a7af0532ce46d5";
     const units = "metric";
 
@@ -30,16 +28,7 @@ function App() {
           const polResponse = await fetch(urlPol);
           const polData = await polResponse.json();
           setDataPol(polData);
-          const urlAqi=`https://api.waqi.info/feed/geo:${lat};${lon}/?token=${aqiApi}`;
-          try{
-                  const aqiResponse = await fetch(urlAqi);
-                  const aqiData= await aqiResponse.json();
-                  setAqiData(aqiData);
-                  console.log(aqiData);
-          }catch(err){               
-            console.log(err);
-          }
-          console.log(polData);
+                    console.log(polData);
         }catch(e){
           console.log(e.message);
         }
@@ -57,7 +46,7 @@ function App() {
     return (
     <div className="App">
      <Header changeLocation={onSearchChange} />
-     <Main weatherData={data} dataPol={dataPol} aqiData={aqiData} />
+     <Main weatherData={data} dataPol={dataPol}  />
     </div>
   );
 }

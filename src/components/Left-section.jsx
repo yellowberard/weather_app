@@ -6,7 +6,7 @@ import Skyline from '../assests/images/skyline.webp';
 import WeatherIcon from './WeatherIcon';
 
 
-const LeftSection = ({ data, dataPoll, aqiData}) => {
+const LeftSection = ({ data, dataPoll}) => {
     const date = new Date(data ? data.dt+data.timezone * 1000 : 0);
     const time =  date.toLocaleTimeString("en-US");
    
@@ -37,9 +37,9 @@ const LeftSection = ({ data, dataPoll, aqiData}) => {
     </div>
    
 </div>
-<div className="mid-main d-flex  align-items-center">    
-<ProgressSection />
-<div className="more-info shadow d-flex flex-column  justify-content-center align-items-center" >
+{/* <div className="mid-main d-flex justify-content-center align-items-center">    
+{/* <ProgressSection /> */}
+{/* <div className="more-info shadow d-flex   justify-content-center align-items-center" >
     <div className="feels_pressure d-flex align-items-center justify-content-center ">
     <div className="feels d-flex flex-column align-items-center">
         <span className='mid-info-head justify-self-start'>Feels like</span>
@@ -65,8 +65,9 @@ const LeftSection = ({ data, dataPoll, aqiData}) => {
     </div>
     
 </div>
-</div>
-<Highlight sunrise={data.sys?data.sys.sunrise:0} sunset={data.sys?data.sys.sunset:0} dataPolll={dataPoll} aqiData={aqiData} />
+</div> */} 
+<div className='high-head'>Today's Highlight</div>
+<Highlight sunrise={data.sys?data.sys.sunrise:0} sunset={data.sys?data.sys.sunset:0} dataPolll={dataPoll} />
 
     </div>
     )

@@ -1,16 +1,18 @@
 import React from 'react'
 import '../assests/css/Left-section.css'
-import ProgressSection from './ProgressionSection';
+// import ProgressSection from './ProgressionSection';
 import Highlight from './Highlight';
 import Skyline from '../assests/images/skyline.webp';
 import WeatherIcon from './WeatherIcon';
 
 
 const LeftSection = ({ data, dataPoll}) => {
-    const date = new Date(data ? data.dt+data.timezone * 1000 : 0);
-    const time =  date.toLocaleTimeString("en-US");
+    // const date = new Date(data ? data.dt+data.timezone * 1000 : 0);
+    // const time =  date.toLocaleTimeString("en-US");
+    const date = new Date((data.dt) * 1000);
+    const time =  date.toLocaleTimeString("en-IN");
    
-    const country = data.sys ? `${data.sys.country}` : "IN";  
+    // const country = data.sys ? `${data.sys.country}` : "IN";  
     return(
         <div className="left-section">
     <div className="temp-info  container-fluid row d-flex flex-column  align-items-center justify-content-center">

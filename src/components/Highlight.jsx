@@ -19,7 +19,7 @@ const Highlight =( {sunrise, sunset, dataPolll } )=>{
     var AQI = aqiCalculator(DATA);
     console.log(AQI);
 
-    const aqiColors = ["#00cc00", "#64cd02", "#ffff00", "#ff9900", "#ff0000", "#a4292a"];
+    const aqiColors = ["#00cc00", "#64cd02", "#fcbf26", "#ff9900", "#ff0000", "#a4292a"];
     const aqiName = ["Good", "Satisfactory", "Moderate", "Poor", "Severe", "Hazardous"];
     const sunriseDate = new Date(sunrise * 1000);
     const sunriseTime =  sunriseDate.toLocaleTimeString("en-US");

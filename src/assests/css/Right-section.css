@@ -1,22 +1,33 @@
-.right-section {
-    width: 25%;
-    height: 100%;
-}
+    .rightSec {
+        background-color: #f0f0f0;
+        /* height: 100%; */
+        border-radius: 25px;
+        overflow-y: scroll;
+    }
 
-.addCity {
-    background-color: #fdefce;
-    border-radius: 1rem;
-    width: 70%;
-    padding: 0.8rem;
-    gap: 5%
-}
+    .addCityCard {
+        width: 80%;
+        height: 100px;
+        background-color: #fdefce;
+        border-radius: 25px;
+    }
 
-.addCity span {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
+    .addCityCard img {
+        height: 80%;
+    }
 
-.addCity img {
-    height: 5rem;
-    width: 5rem;
-}
+    .addCityCard button {
+        background-color: #bca3a2;
+        color: #fefefe;
+    }
+
+    .cityCard {
+        width: 80%;
+        height: 70px;
+        background-color: #fdefce;
+        border-radius: 25px;
+    }
+
+    .cityCard .btn {
+        z-index: 5;
+    }

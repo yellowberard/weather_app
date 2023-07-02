@@ -48,7 +48,8 @@ function App() {
     return (
     <div className="App">
      <Header changeLocation={onSearchChange} />
-     <Main weatherData={data} dataPol={dataPol}  />
+     <Main weatherData={data} dataPol={dataPol} searchChange={onSearchChange}  />
+     
     </div>
   );
 }
